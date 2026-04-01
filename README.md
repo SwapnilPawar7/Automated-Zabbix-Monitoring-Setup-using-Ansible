@@ -77,6 +77,52 @@ Replace IPs and credentials before running.
 
 ---
 
+
+---
+
+## 🔥 Key Learnings
+
+- Infrastructure automation with Ansible
+- API-driven system integration
+- Multi-OS compatibility handling
+- Idempotent configuration management
+- Debugging real-world infra issues
+
+---
+
+---
+
+## 📈 Future Improvements
+
+Dynamic inventory (AWS EC2)
+Zabbix auto-registration
+Alerting & triggers automation
+Role modularization
+Secrets management using Ansible Vault
+
+---
+
+---
+
+## Architecture Summary
+
+
+                +----------------------+
+                |  Ansible Control Node|
+                |  (venv active)       |
+                +----------+-----------+
+                           |
+        +------------------+------------------+
+        |                                     |
+   SSH (my-key.pem)                     HTTP API (httpapi)
+        |                                     |
+        v                                     v
++---------------+                   +----------------------+
+| Target Server |                   |   Zabbix Server      |
+| (Agent runs) |                   |  (API + UI)          |
++---------------+                   +----------------------+
+
+
 ---
 ## 📸 Screenshots
 
