@@ -1,0 +1,4 @@
+zabbix_server_url: "http://35.154.219.63/zabbix/api_jsonrpc.php"
+zabbix_host_group: "Linux servers"
+zabbix_template: "Template OS Linux"
+zabbix_server_ip: "35.154.219.63"

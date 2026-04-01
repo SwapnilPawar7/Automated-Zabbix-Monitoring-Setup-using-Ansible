@@ -1,0 +1,36 @@
+- name: Install Zabbix agent (Debian/Ubuntu)
+  apt:
+    name: zabbix-agent
+    state: present
+    update_cache: yes
+  when: ansible_os_family == "Debian"
+
+- name: Install Zabbix agent (Amazon Linux / RHEL)
+  yum:
+    name: zabbix-agent
+    state: present
+  when: ansible_os_family == "RedHat"
+
+- name: Configure Server (passive checks)
+  lineinfile:
+    path: /etc/zabbix/zabbix_agentd.conf
+    regexp: '^Server='
+    line: "Server={{ zabbix_server_ip }}"
+
+- name: Configure ServerActive (active checks)
+  lineinfile:
+    path: /etc/zabbix/zabbix_agentd.conf
+    regexp: '^ServerActive='
+    line: "ServerActive={{ zabbix_server_ip }}"
+
+- name: Configure Hostname
+  lineinfile:
+    path: /etc/zabbix/zabbix_agentd.conf
+    regexp: '^Hostname='
+    line: "Hostname={{ inventory_hostname }}"
+
+- name: Restart Zabbix agent
+  service:
+    name: zabbix-agent
+    state: restarted
+    enabled: yes

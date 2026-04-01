@@ -1,0 +1,17 @@
+- name: Create host in Zabbix
+  community.zabbix.zabbix_host:
+    server_url: "{{ zabbix_server_url }}"
+    login_token: "{{ zabbix_api_token }}"
+    host_name: "{{ inventory_hostname }}"
+    visible_name: "{{ inventory_hostname }}"
+    host_groups:
+      - "{{ zabbix_host_group }}"
+    link_templates:
+      - "{{ zabbix_template }}"
+    interfaces:
+      - type: agent
+        main: 1
+        useip: 1
+        ip: "{{ ansible_host }}"
+        port: "10050"
+    state: present
