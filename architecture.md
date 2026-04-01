@@ -1,7 +1,7 @@
 
 ---
 
-# 6) architecture.md (Optional but Strong)
+# architecture.md (Optional but Strong)
 
 ```markdown
 # Architecture
