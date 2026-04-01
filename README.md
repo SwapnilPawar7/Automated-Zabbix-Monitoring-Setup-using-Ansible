@@ -136,6 +136,10 @@ Secrets management using Ansible Vault
 
 <img width="1477" height="868" alt="Screenshot 2026-04-02 at 4 27 42 AM" src="https://github.com/user-attachments/assets/7d045f26-75f1-4c03-ac03-555ffd08b16f" />
 
+<img width="1222" height="601" alt="Screenshot 2026-04-02 at 4 33 04 AM" src="https://github.com/user-attachments/assets/6b70e5b4-11bd-4d11-890d-837f551230c8" />
+
+<img width="1459" height="586" alt="Screenshot 2026-04-02 at 4 32 06 AM" src="https://github.com/user-attachments/assets/05628d61-b8d0-4f96-804c-324048023a56" />
+
 
 ---
 
