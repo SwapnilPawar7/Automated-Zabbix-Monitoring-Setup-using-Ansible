@@ -70,7 +70,22 @@ ansible-playbook -i inventory.ini playbook.yml
 
 ---
 ## ⚠️ Notes
-AWS instances used for testing were temporary and may not be available anymore
-Replace IPs and credentials before running
+
+AWS instances used for testing were temporary and may not be available anymore.
+Replace IPs and credentials before running.
+
+
 ---
+
+---
+## 📸 Screenshots
+
+<img width="1473" height="650" alt="Screenshot 2026-04-02 at 3 37 47 AM" src="https://github.com/user-attachments/assets/6dcac78a-8283-4ce9-8149-2c957f8a0245" />
+<img width="1465" height="828" alt="Screenshot 2026-04-02 at 3 35 55 AM" src="https://github.com/user-attachments/assets/0826ac53-a1d8-481e-aba5-a37458cd696d" />
+<img width="1466" height="679" alt="Screenshot 2026-04-02 at 3 35 44 AM" src="https://github.com/user-attachments/assets/716360ca-f1af-4bb9-870c-a0b574baaacd" />
+
+---
+
+
+
 
