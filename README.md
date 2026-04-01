@@ -106,7 +106,7 @@ Secrets management using Ansible Vault
 
 ## Architecture Summary
 
-
+```
                 +----------------------+
                 |  Ansible Control Node|
                 |  (venv active)       |
@@ -121,7 +121,7 @@ Secrets management using Ansible Vault
 | Target Server |                   |   Zabbix Server      |
 | (Agent runs) |                   |  (API + UI)          |
 +---------------+                   +----------------------+
-
+```
 
 ---
 ## 📸 Screenshots
