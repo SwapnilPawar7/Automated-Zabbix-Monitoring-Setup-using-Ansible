@@ -66,6 +66,11 @@ Zabbix begins collecting metrics from agents.
 ```bash
 ansible-playbook -i inventory.ini playbook.yml
 
+```
+
+---
 ## ⚠️ Notes
 AWS instances used for testing were temporary and may not be available anymore
 Replace IPs and credentials before running
+---
+
